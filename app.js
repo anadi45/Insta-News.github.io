@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-// const port = processs.env.PORT || 3000;
+const port = processs.env.PORT || 3000;
 
 const app = express();
 
@@ -11,6 +11,6 @@ app.get("/", function(req, res) {
     res.sendFile("/index.html");
 });
 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log(`http://localhost:3000`);
 });
